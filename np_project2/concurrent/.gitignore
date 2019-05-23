@@ -1,0 +1,43 @@
+# ignore ./np1/.vscode/
+.vscode/
+
+# ignore the object file in ./np1/
+*.o
+
+.keep
+
+# ignore the executable file : demo , which is in the ./np1/
+demo
+
+npserver
+
+np_multi_proc
+
+
+.gdbinit
+
+.DS_Store
+
+# ignore everything in ./np1/bin/
+bin/
+
+# ignore test file in ./np1/
+test.html
+
+# ignore .DS_Store in ./
+.DS_Store
+
+# ignore test case
+np_project2_demo_sample/
+
+user_pipe/
+
+*.txt
+
+client.cpp
+
+client
+
+*.sh
+
+*.swp

@@ -1,0 +1,15 @@
+.vscode/
+
+socks_server
+
+*.o
+
+*.html
+
+*.txt
+
+*.sh
+
+*.cgi
+
+*.conf
