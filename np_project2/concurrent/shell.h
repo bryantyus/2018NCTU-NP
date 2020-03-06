@@ -1,28 +1,26 @@
 #ifndef __SHELL_H__
 #define __SHELL_H__
 
-#include <string>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sstream>
-#include <vector>
+#include <errno.h>
+#include <fcntl.h>
 #include <iostream>
 #include <iterator>
 #include <queue>
-#include <errno.h>
 #include <signal.h>
-#include <sys/wait.h>
-#include <fcntl.h>
-#include <string.h>
+#include <sstream>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <string>
 #include <sys/mman.h>
 #include <sys/stat.h>
-
+#include <sys/wait.h>
+#include <unistd.h>
+#include <vector>
 
 #define FILE_MAX 1024
 #define TOKEN_MAX 10000
 #define BUFFER_SIZE 16384
-
 
 using namespace std;
 
@@ -34,4 +32,3 @@ void recv_broadcast();
 void sigusr1_handler(int);
 
 #endif
-

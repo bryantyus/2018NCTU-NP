@@ -1,25 +1,24 @@
 #ifndef __SOCKET_H__
 #define __SOCKET_H__
 
-
-#include <string>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sstream>
-#include <vector>
+#include <arpa/inet.h>
+#include <errno.h>
+#include <fcntl.h>
 #include <iostream>
 #include <iterator>
-#include <queue>
-#include <errno.h>
-#include <signal.h>
-#include <sys/wait.h>
-#include <fcntl.h>
-#include <string.h>
-#include <stdio.h>
-#include <sys/socket.h>
 #include <netdb.h>
-#include <arpa/inet.h>
 #include <netinet/in.h>
+#include <queue>
+#include <signal.h>
+#include <sstream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <string>
+#include <sys/socket.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <vector>
 
 using namespace std;
 

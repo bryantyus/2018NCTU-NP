@@ -1,21 +1,20 @@
 #ifndef __SHELL_H__
 #define __SHELL_H__
 
-#include <string>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sstream>
-#include <vector>
+#include <errno.h>
+#include <fcntl.h>
 #include <iostream>
 #include <iterator>
 #include <queue>
-#include <errno.h>
 #include <signal.h>
-#include <sys/wait.h>
-#include <fcntl.h>
-#include <string.h>
+#include <sstream>
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <string.h>
+#include <string>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <vector>
 
 #define FILE_MAX 1024
 #define TOKEN_MAX 10000
@@ -23,10 +22,9 @@
 
 using namespace std;
 
-void my_shell(string, int *, int [][2]);
+void my_shell(string, int *, int[][2]);
 void split_command(vector<string> &, string, char);
 void clean_zombie();
 int readline(string &);
 
 #endif
-
